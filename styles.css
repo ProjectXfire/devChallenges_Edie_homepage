@@ -1,0 +1,374 @@
+/*Global Styles*/
+body {
+  font-family: "Delius", cursive;
+  margin: 0;
+}
+main {
+  margin: 10px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: bold;
+}
+h3 {
+  font-family: "Oswald", sans-serif;
+}
+
+input {
+  font-family: "Delius", cursive;
+}
+
+.disable {
+  display: none !important;
+}
+
+/*Header Menu Bar*/
+.menubar {
+  margin-bottom: 40px;
+}
+.menubar__items {
+  display: flex;
+  justify-content: space-between;
+}
+.menubar__options {
+  display: flex;
+}
+.menubar__options li {
+  margin-left: 40px;
+}
+.menubar__hamburguer {
+  cursor: pointer;
+}
+
+/*Side Menu Bar*/
+.sidebar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  background-color: rgb(0, 0, 0, 0.9);
+  visibility: hidden;
+  color: white;
+}
+.sidebar a {
+  color: white;
+}
+.sidebar__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.sidebar__items {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar__items li {
+  margin-bottom: 10px;
+}
+.sidebarShowAnimation {
+  animation-name: showSidebar;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+.sidebarHideAnimation {
+  animation-name: hideSidebar;
+  animation-duration: 0.5s;
+}
+/*Animation - Show & Hide Sidebar*/
+@keyframes showSidebar {
+  0% {
+    right: 100%;
+    visibility: visible;
+  }
+  100% {
+    right: 0;
+    visibility: visible;
+  }
+}
+@keyframes hideSidebar {
+  0% {
+    right: 0;
+    visibility: visible;
+  }
+  100% {
+    right: 100%;
+    visibility: hidden;
+  }
+}
+
+/*About Us*/
+.about-us {
+  margin-top: 50px;
+}
+.about-us p,
+.about-us h1,
+.about-us span {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.about-us__hero {
+  width: 100%;
+  margin: 20px 0;
+}
+.about-us__hero-image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/*Services*/
+.services {
+  margin-top: 50px;
+}
+.services h1 {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.services__title {
+  margin-bottom: 20px;
+}
+.services__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.services_item {
+  padding: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.services_item:hover {
+  -webkit-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.17);
+  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.17);
+}
+
+/*Our works*/
+.our-works {
+  margin-top: 50px;
+}
+.our-works__more {
+  cursor: pointer;
+  display: block;
+  margin-top: 20px;
+  color: rgb(71, 144, 255);
+}
+.our-works__more:after {
+  position: relative;
+  top: 3px;
+  font-family: "Material Icons";
+  content: "\e941";
+}
+.our-works h1 {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.our-works__title {
+  margin-bottom: 20px;
+}
+.our-works__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.our-works__item {
+  padding: 10px;
+}
+.our-works__item img {
+  width: 100%;
+  border-radius: 10px;
+}
+.our-works__item span {
+  font-size: 0.7rem;
+}
+.our-works__item p {
+  margin: 0;
+}
+
+/*Team*/
+.team {
+  margin-top: 50px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.team__subtitle {
+  color: rgb(255, 82, 82);
+}
+.team__photos {
+  display: grid;
+  align-items: center;
+  gap: 10px;
+  grid-template-areas:
+    "block_1 block_2"
+    "block_1 block_3";
+}
+.team__photo {
+  width: 100%;
+  border-radius: 10px;
+}
+.block_1 {
+  grid-area: block_1;
+}
+.block_2 {
+  grid-area: block_2;
+}
+.block_3 {
+  grid-area: block_3;
+}
+
+/*Commnent*/
+.comment {
+  margin-top: 50px;
+}
+.comment__person {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.comment__person img {
+  width: 20%;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.comment__person p {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+/*Footer*/
+.footer {
+  margin-top: 50px;
+  background-color: rgb(17, 9, 27);
+  color: white;
+}
+.footer__menu {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+.footer__block {
+  margin: 30px 15px;
+  font-size: 0.8rem;
+}
+.footer__block a {
+  color: white;
+}
+.footer__block li {
+  margin-bottom: 5px;
+}
+.footer__block p {
+  font-size: 0.6rem;
+  color: grey;
+}
+.created-by {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+/*Shared styles*/
+.join-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: rgb(238, 238, 238);
+  border-radius: 10px;
+  color: rgb(179, 179, 179);
+}
+.join-us input {
+  width: 100%;
+  margin-right: 10px;
+  background-color: rgb(238, 238, 238);
+  border: none;
+  color: rgb(179, 179, 179);
+  outline: none;
+}
+.icon {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(36, 133, 243);
+  color: white;
+}
+.button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(71, 144, 255);
+  border-radius: 10px;
+  color: white;
+}
+.button:hover {
+  background-color: rgb(133, 182, 255);
+}
+
+@media (min-width: 1240px) {
+  main {
+    width: 1000px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .footer__menu {
+    width: 1000px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    margin: 20px 40px;
+  }
+  .about-us p,
+  .about-us h1,
+  .about-us span {
+    margin-left: 150px;
+    width: 400px;
+  }
+  .comment__title {
+    width: 600px;
+  }
+  .comment__person img {
+    width: 10%;
+  }
+}
+
+@media (min-width: 425px) {
+  .about-us p,
+  .about-us h1,
+  .about-us span {
+    margin-left: 50px;
+    width: 300px;
+  }
+}

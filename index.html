@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delius&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Team</title>
+  </head>
+  <body>
+    <main class="container">
+      <nav class="menubar">
+        <ul class="menubar__items">
+          <li class="menubar__home"><strong>Edie</strong></li>
+          <li
+            id="menubar__hamburguer"
+            class="menubar__hamburguer"
+            onclick="showSidebar()"
+          >
+            <span class="material-icons"> menu </span>
+          </li>
+          <div id="menubar__options" class="menubar__options disable">
+            <li><a href="/">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#our-works">Our Works</a></li>
+            <li><a href="/">Clients</a></li>
+            <li><a href="/">Contact</a></li>
+          </div>
+        </ul>
+      </nav>
+      <nav id="sidebar" class="sidebar">
+        <ul class="sidebar__items">
+          <li><a href="/">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#our-works">Our Works</a></li>
+          <li><a href="/">Clients</a></li>
+          <li><a href="/">Contact</a></li>
+        </ul>
+        <span class="material-icons sidebar__close" onclick="hideSidebar()">
+          close
+        </span>
+      </nav>
+      <section class="about-us">
+        <p>Unhappy with you website</p>
+        <h1>We create beautiful and fast web services</h1>
+        <div class="about-us__hero">
+          <img
+            class="about-us__hero-image"
+            src="./public/images/heroImage.jpg"
+            alt="hero-image"
+          />
+        </div>
+        <h1>Story, emotion and purpose</h1>
+        <p>
+          We help transform yor ideas into real world applications that will
+          outperform yor toughest competition and help you achieve your
+          strategic goals in short period of time.
+        </p>
+        <p>Want us to contact you</p>
+        <span class="join-us">
+          <input type="text" placeholder="email" />
+          <button class="button" type="button">Join</button>
+        </span>
+      </section>
+      <section id="services" class="services">
+        <h1 class="services__title">We offer high demand services</h1>
+        <div class="services__items">
+          <article class="services_item">
+            <span
+              class="material-icons icon"
+              style="background-color: rgb(71, 144, 255)"
+            >
+              mode
+            </span>
+            <h3><strong>UI/UX Design</strong></h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos,
+              voluptate magni.
+            </p>
+            <button class="button" type="button">Get started</button>
+          </article>
+          <article class="services_item">
+            <span
+              class="material-icons icon"
+              style="background-color: rgb(53, 212, 47)"
+            >
+              code
+            </span>
+            <h3><strong>Front End</strong></h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos,
+              voluptate magni. Officiis repellat excepturi nesciunt veniam
+              facere hic id blanditiis dolorem temporibus iusto, nostrum
+              quisquam? Est enim incidunt illo non.
+            </p>
+            <button class="button" type="button">Get started</button>
+          </article>
+          <article class="services_item">
+            <span
+              class="material-icons icon"
+              style="background-color: rgb(255, 82, 82)"
+            >
+              storage
+            </span>
+            <h3><strong>Back End</strong></h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos,
+              voluptate magni. Officiis repellat excepturi nesciunt veniam
+              facere hic id blanditiis dolorem temporibus iusto.
+            </p>
+            <button class="button" type="button">Get started</button>
+          </article>
+        </div>
+      </section>
+      <section id="our-works" class="our-works">
+        <h1 class="our-works__title">Good design means food business</h1>
+        <div class="our-works__items">
+          <article class="our-works__item">
+            <img src="./public/images/smarthome.jpg" alt="smarthhome" />
+            <span>Full stack application</span>
+            <p><strong>Smart home dashboard</strong></p>
+          </article>
+          <article class="our-works__item">
+            <img src="./public/images/onboard.png" alt="onboard" />
+            <span>UX/UI design</span>
+            <p><strong>Onboard application</strong></p>
+          </article>
+          <article class="our-works__item">
+            <img src="./public/images/booking.png" alt="booking" />
+            <span>Mobile application</span>
+            <p><strong>Booking system</strong></p>
+          </article>
+          <article class="our-works__item">
+            <img src="./public/images/juice-product.png" alt="juice-product" />
+            <span>Front End application</span>
+            <p><strong>Juice product homepage</strong></p>
+          </article>
+        </div>
+        <span class="our-works__more">see more</span>
+      </section>
+      <section id="team" class="team">
+        <div>
+          <p class="team__subtitle">Meet the team</p>
+          <h1 class="team__title">We are chilled and a laidback team</h1>
+          <p class="team__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="team__photos">
+          <img
+            class="team__photo block_1"
+            src="./public/images/person3.png"
+            alt="person3"
+          />
+          <img
+            class="team__photo block_2"
+            src="./public/images/person1.png"
+            alt="person1"
+          />
+          <img
+            class="team__photo block_3"
+            src="./public/images/person2.png"
+            alt="person2"
+          />
+        </div>
+      </section>
+      <section class="comment">
+        <h1 class="comment__title">
+          "Fast and outstanding results. Edie understands their customer's
+          needs. They haver a young and talented team."
+        </h1>
+        <div class="comment__person">
+          <img src="./public/images/person4.png" alt="person4" />
+          <div>
+            <p><strong>Carlos Tran</strong></p>
+            <span>The Decorate Gatsby</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__menu">
+        <div class="footer__block">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#our-works">Our Works</a></li>
+            <li><a href="/">Clients</a></li>
+            <li><a href="/">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__block">
+          <h2>Edie</h2>
+          <a href="/"
+            ><img src="./public/images/instagram.svg" alt="instagram"
+          /></a>
+          <a href="/"
+            ><img src="./public/images/linkedin.svg" alt="linkedin"
+          /></a>
+          <a href=""><img src="./public/images/twitter.svg" alt="twitter" /></a>
+        </div>
+        <div class="footer__block">
+          <p>Want us to contact you?</p>
+          <span class="join-us">
+            <input type="text" placeholder="email" />
+            <button class="button" type="button">Join</button>
+          </span>
+        </div>
+      </div>
+      <div class="created-by">
+        created by <strong>gbdeveloper</strong> - devChallenges.io
+      </div>
+    </footer>
+    <script src="./javascript.js"></script>
+  </body>
+</html>
